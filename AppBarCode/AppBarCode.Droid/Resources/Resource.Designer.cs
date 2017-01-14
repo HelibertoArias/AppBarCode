@@ -27,6 +27,9 @@ namespace AppBarCode.Droid
 		public static void UpdateIdValues()
 		{
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::AppBarCode.Droid.Resource.Attribute.actionBarSize;
+			global::ZXing.Mobile.Resource.Id.contentFrame = global::AppBarCode.Droid.Resource.Id.contentFrame;
+			global::ZXing.Mobile.Resource.Layout.zxingscanneractivitylayout = global::AppBarCode.Droid.Resource.Layout.zxingscanneractivitylayout;
+			global::ZXing.Mobile.Resource.Layout.zxingscannerfragmentlayout = global::AppBarCode.Droid.Resource.Layout.zxingscannerfragmentlayout;
 		}
 		
 		public partial class Animation
@@ -2306,6 +2309,9 @@ namespace AppBarCode.Droid
 			// aapt resource value: 0x7f07001f
 			public const int collapseActionView = 2131165215;
 			
+			// aapt resource value: 0x7f07009a
+			public const int contentFrame = 2131165338;
+			
 			// aapt resource value: 0x7f07004a
 			public const int contentPanel = 2131165258;
 			
@@ -2923,6 +2929,12 @@ namespace AppBarCode.Droid
 			
 			// aapt resource value: 0x7f030038
 			public const int Toolbar = 2130903096;
+			
+			// aapt resource value: 0x7f030039
+			public const int zxingscanneractivitylayout = 2130903097;
+			
+			// aapt resource value: 0x7f03003a
+			public const int zxingscannerfragmentlayout = 2130903098;
 			
 			static Layout()
 			{

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppBarCode.ViewPages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,23 +12,25 @@ namespace AppBarCode
     {
         public App()
         {
-            // The root page of your application
-            var content = new ContentPage
-            {
-                Title = "AppBarCode",
-                Content = new StackLayout
-                {
-                    VerticalOptions = LayoutOptions.Center,
-                    Children = {
-                        new Label {
-                            HorizontalTextAlignment = TextAlignment.Center,
-                            Text = "Welcome to Xamarin Forms!"
-                        }
-                    }
-                }
-            };
+            //// The root page of your application
+            //var content = new ContentPage
+            //{
+            //    Title = "AppBarCode",
+            //    Content = new StackLayout
+            //    {
+            //        VerticalOptions = LayoutOptions.Center,
+            //        Children = {
+            //            new Label {
+            //                HorizontalTextAlignment = TextAlignment.Center,
+            //                Text = "Welcome to Xamarin Forms!"
+            //            }
+            //        }
+            //    }
+            //};
 
-            MainPage = new NavigationPage(content);
+            //MainPage = new NavigationPage(content);
+            MainPage = new ScanPage();
+             
         }
 
         protected override void OnStart()

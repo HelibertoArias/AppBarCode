@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using ZXing.Mobile;
 
 namespace AppBarCode.Droid
 {
@@ -20,8 +21,13 @@ namespace AppBarCode.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            //Initialize scanner
+            MobileBarcodeScanner.Initialize(this.Application);
+
             LoadApplication(new App());
         }
+
+        
     }
 }
 
