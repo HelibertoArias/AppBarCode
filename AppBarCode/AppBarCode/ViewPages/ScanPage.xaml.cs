@@ -1,10 +1,5 @@
 ﻿using AppBarCode.Services;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 
 namespace AppBarCode.ViewPages
@@ -22,11 +17,8 @@ namespace AppBarCode.ViewPages
         {
             var scanner = DependencyService.Get<IQrCodeScanningService>();
             var result = await scanner.ScanAsync();
-            if(result!=null)
+            if (result != null)
                 barcode.Text = result;
-
-             
-
         }
     }
 }

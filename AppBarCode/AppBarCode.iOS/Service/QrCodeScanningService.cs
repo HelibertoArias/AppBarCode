@@ -1,12 +1,10 @@
-﻿
-using AppBarCode.Services;
-
-using System;
+﻿using AppBarCode.Services;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using ZXing.Mobile;
 
-[assembly : Dependency(typeof(AppBarCode.iOS.Service.QrCodeScanningService))]
+[assembly: Dependency(typeof(AppBarCode.iOS.Service.QrCodeScanningService))]
+
 namespace AppBarCode.iOS.Service
 {
     public class QrCodeScanningService : IQrCodeScanningService
