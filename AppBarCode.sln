@@ -14,6 +14,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppBarCode.Droid", "AppBarC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppBarCode.iOS", "AppBarCode\AppBarCode.iOS\AppBarCode.iOS.csproj", "{BF92F7FB-AFD1-4FF9-AA80-C3CFD9D35EE1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{2C006CC5-FAF2-4CAC-9C31-DE934E8DA504}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{7D34F4F5-39C0-4F6E-8649-21C6010D7BE9}"
+	ProjectSection(SolutionItems) = preProject
+		Documentation\images\sample-camara-01.png = Documentation\images\sample-camara-01.png
+		Documentation\images\sample-camara-02.png = Documentation\images\sample-camara-02.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
@@ -197,5 +205,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7D34F4F5-39C0-4F6E-8649-21C6010D7BE9} = {2C006CC5-FAF2-4CAC-9C31-DE934E8DA504}
 	EndGlobalSection
 EndGlobal
