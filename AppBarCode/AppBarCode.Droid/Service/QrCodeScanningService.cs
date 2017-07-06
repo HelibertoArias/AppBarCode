@@ -20,12 +20,14 @@ namespace AppBarCode.Droid.Service
             };
             var scanner = new MobileBarcodeScanner()
             {
-                TopText = "Acerca la c·mara al elemento",
+                TopText = "Acerca la c√°mara al elemento",
                 BottomText = "Toca la pantalla para enfocar"
             };
 
             var scanResults = await scanner.Scan(optionsCustom);
-            return scanResults.Text;
+            //Fix by Ale
+            return (scanResults != null) ? scanResult.Text : string.Empty;
+            
         }
     }
 }
