@@ -13,7 +13,9 @@ namespace AppBarCode.iOS.Service
         {
             var scanner = new MobileBarcodeScanner();
             var scanResults = await scanner.Scan();
-            return scanResults.Text;
+            //Fix by Ale
+            return (scanResults != null) ? scanResult.Text : string.Empty;
+            
         }
     }
 }
